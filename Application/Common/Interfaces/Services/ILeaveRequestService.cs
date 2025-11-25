@@ -1,10 +1,9 @@
 ﻿using Application.DTOs.LeaveRequest;
-using Domain.Entities; // Eğer Entity kullanıyorsan
+using Domain.Entities; 
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-// HATA BURADAYDI: Muhtemelen sende "Application.Services" yazıyor.
-// AŞAĞIDAKİ GİBİ OLMALI:
+
 namespace Application.Common.Interfaces.Services
 {
     public interface ILeaveRequestService
