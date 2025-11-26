@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Application.Common.Interfaces
+﻿namespace Application.Common.Interfaces
 {
-    internal class ICurrentUserService
+    public interface ICurrentUserService
     {
+        // Giriş yapmış kullanıcının ID'si (ClaimTypes.NameIdentifier)
+        string? UserId { get; }
+
+        // Giriş yapmış kullanıcının Email'i (ClaimTypes.Email)
+        string? Email { get; }
+
+        // Kullanıcı giriş yapmış mı?
+        bool IsAuthenticated { get; }
     }
 }
