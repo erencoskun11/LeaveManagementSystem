@@ -12,5 +12,10 @@ namespace Application.Common.Interfaces.Services
         Task<List<LeaveRequestDetailDto>> GetMyLeaveRequestsAsync(string userEmail);
         Task<List<LeaveRequestDetailDto>> GetAllLeaveRequestsAsync();
         Task<bool> ManageLeaveRequestAsync(int requestId, bool approved, string managerEmail);
+        Task<bool> DeleteLeaveRequestAsync(int id, string userEmail, string userRole);
+        Task<bool> UpdateLeaveRequestAsync(UpdateLeaveRequestDto request, string userEmail);
+
+
+        Task<List<LeaveReportDto>> GetLeaveReportAsync(DateTime startDate, DateTime endDate,int? EmployeeId);
     }
 }
