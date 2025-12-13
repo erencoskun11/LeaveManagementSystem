@@ -16,6 +16,5 @@ namespace Application.Common.Interfaces.Services
         Task<bool> UpdateLeaveRequestAsync(UpdateLeaveRequestDto request, string userEmail);
 
 
-        Task<List<LeaveReportDto>> GetLeaveReportAsync(DateTime startDate, DateTime endDate,int? EmployeeId);
     }
 }
