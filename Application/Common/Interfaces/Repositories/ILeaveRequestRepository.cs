@@ -12,5 +12,6 @@ namespace Application.Common.Interfaces.Repositories
         Task<List<LeaveRequest>> GetLeaveRequestsWithDetailsAsync();
         Task<LeaveRequest> GetLeaveRequestWithDetailsByIdAsync(int id);
         Task<List<LeaveRequest>> GetLeaveRequestsByEmployeeIdAsync(int employeeId);
+        Task<List<LeaveRequest>> GetApprovedLeaveRequestsByDateRangeAsync(DateTime startDate, DateTime endDate, int? employeeId);
     }
 }
