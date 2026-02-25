@@ -1,13 +1,10 @@
 ﻿using Application.Common.Interfaces;
 using Application.Common.Interfaces.Repositories;
-using Application.Common.Interfaces.Services; // <-- Bu using EKLİ OLMALI
 using Application.Services;
 using Infrastructure.Persistence.Context;
 using Infrastructure.Persistence.Repositories;
-using Infrastructure.Services; // <-- Bu using EKLİ OLMALI
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure
 {
